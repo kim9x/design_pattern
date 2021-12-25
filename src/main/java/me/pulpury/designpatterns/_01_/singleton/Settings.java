@@ -1,6 +1,8 @@
 package me.pulpury.designpatterns._01_.singleton;
 
-public class Settings {
+import java.io.Serializable;
+
+public class Settings implements Serializable {
 	
 	// 방법 3 사용 시 
 	// java 1.5 버전 이상부턴
@@ -56,6 +58,13 @@ public class Settings {
 		return SettingsHolder.INSTANCE;
 		
 		
+	}
+	
+	// 역직렬화 할 때
+	// 아래 readResolve를 사용하므로
+	// 직열화/역직열화는 해결이 가능하다.
+	protected Object readResolve() {
+		return getInstance();
 	}
 
 }
