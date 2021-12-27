@@ -1,5 +1,8 @@
 package me.pulpury.designpatterns._01_creational_patterns._02_factory_method._02_after;
 
+import me.pulpury.designpatterns._01_creational_patterns._3_abstract_factory._02_after.Anchor;
+import me.pulpury.designpatterns._01_creational_patterns._3_abstract_factory._02_after.Wheel;
+
 public class Ship {
 
     private String name;
@@ -7,6 +10,10 @@ public class Ship {
     private String color;
 
     private String logo;
+    
+    private Anchor anchor;
+    
+    private Wheel wheel;
 
     public String getName() {
         return name;
@@ -40,4 +47,20 @@ public class Ship {
                 ", logo='" + logo + '\'' +
                 '}';
     }
+
+	public Anchor getAnchor() {
+		return anchor;
+	}
+
+	public void setAnchor(Anchor anchor) {
+		this.anchor = anchor;
+	}
+
+	public Wheel getWheel() {
+		return wheel;
+	}
+
+	public void setWheel(Wheel wheel) {
+		this.wheel = wheel;
+	}
 }
