@@ -20,6 +20,16 @@ public class DefaultTourBuilder implements TourPlanBuilder {
     private String whereToStay;
 
     private List<DetailPlan> plans;
+    
+    // 아래처럼 사용하는 방법도 있다.
+    // 아래처럼 사용하게되면 위처럼 변수들을 일일히 명시하지 않다도 된다.
+    // 그러나 아래의 메서드 들에선
+    // 'this.tourPlan.setTitle(title);' 처럼 사용해줘야한다.
+    private TourPlan tourPlan;
+    public TourPlanBuilder newInstance() {
+    	this.tourPlan = new TourPlan();
+		return this;
+	}
 
     @Override
     public TourPlanBuilder nightsAndDays(int nights, int days) {
@@ -31,6 +41,7 @@ public class DefaultTourBuilder implements TourPlanBuilder {
     @Override
     public TourPlanBuilder title(String title) {
         this.title = title;
+//        this.tourPlan.setTitle(title);
         return this;
     }
 
@@ -60,4 +71,5 @@ public class DefaultTourBuilder implements TourPlanBuilder {
     public TourPlan getPlan() {
         return new TourPlan(title, nights, days, startDate, whereToStay, plans);
     }
+
 }
