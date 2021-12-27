@@ -9,13 +9,12 @@ public interface ShipFactory {
 		sendEmailTo(email, ship);
 		return ship;
 	}
-	
-	private void sendEmailTo(String email, Ship ship) {
-		System.out.println(ship);
-	}
+	void sendEmailTo(String email, Ship ship);
 
 	Ship createShip();
 	
+	// 자바 11버전 이상부터
+	// 인터페이스에 private 메서드 사용이 가능하다.
 	private void validate(String name, String email) {
 		if (name == null || name.isBlank()) {
 			throw new IllegalArgumentException("배 이름을 지어주세요.");
