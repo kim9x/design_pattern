@@ -1,4 +1,4 @@
-package me.pulpury.designpatterns._01_creational_patterns._3_abstract_factory._01_before;
+package me.pulpury.designpatterns._01_creational_patterns._03_abstract_factory._01_before;
 
 import me.pulpury.designpatterns._01_creational_patterns._02_factory_method._02_after.DefaultShipFactory;
 import me.pulpury.designpatterns._01_creational_patterns._02_factory_method._02_after.Ship;

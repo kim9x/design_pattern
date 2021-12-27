@@ -1,4 +1,4 @@
-package me.pulpury.designpatterns._01_creational_patterns._3_abstract_factory._03_java;
+package me.pulpury.designpatterns._01_creational_patterns._03_abstract_factory._03_java;
 
 import org.springframework.beans.factory.FactoryBean;
 
