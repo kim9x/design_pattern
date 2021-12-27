@@ -13,14 +13,6 @@ public class App {
 
         String url = githubIssue.getUrl();
         System.out.println(url);
-        
-        GithubIssue clone = githubIssue.clone();
-        
-        // clone != githubIssue
-        // 레퍼런스가 같지 않음
-        // clone.equals(githubIssue) => 같다
-        // equals는 그 안의 데이터가 같은지 보는 것이기 때문
-        
     }
 
 }
