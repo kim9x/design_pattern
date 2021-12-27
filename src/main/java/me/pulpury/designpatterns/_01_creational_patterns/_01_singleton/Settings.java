@@ -1,4 +1,4 @@
-package me.pulpury.designpatterns._01_.singleton;
+package me.pulpury.designpatterns._01_creational_patterns._01_singleton;
 
 import java.io.Serializable;
 
