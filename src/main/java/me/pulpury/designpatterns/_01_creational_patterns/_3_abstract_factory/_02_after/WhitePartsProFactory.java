@@ -10,6 +10,6 @@ public class WhitePartsProFactory implements ShipPartsFactory {
 	@Override
 	public Wheel createWheel() {
 		return new WhiteWheelPro();
-	}
+  	}
 
 }
