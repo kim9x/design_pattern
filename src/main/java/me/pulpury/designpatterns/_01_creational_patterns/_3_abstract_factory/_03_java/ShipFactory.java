@@ -1,8 +1,9 @@
 package me.pulpury.designpatterns._01_creational_patterns._3_abstract_factory._03_java;
 
-import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._02_after.Ship;
-import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._02_after.Whiteship;
 import org.springframework.beans.factory.FactoryBean;
+
+import me.pulpury.designpatterns._01_creational_patterns._02_factory_method._02_after.Ship;
+import me.pulpury.designpatterns._01_creational_patterns._02_factory_method._02_after.Whiteship;
 
 public class ShipFactory implements FactoryBean<Ship> {
 
